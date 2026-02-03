@@ -200,7 +200,7 @@ export default defineConfig(({ mode }) => {
               },
             },
           ],
-          maximumFileSizeToCacheInBytes: 2.3 * 1024 ** 2, // 2.3MB
+          maximumFileSizeToCacheInBytes: 5 * 1024 **2 , // 2.3MB  2.3 * 1024 ** 2
         },
         manifest: {
           short_name: "StoreNCraft",

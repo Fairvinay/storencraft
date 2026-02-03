@@ -54,6 +54,8 @@
   "scripts": {
     "build-node": "node ./scripts/build-node.js",
     "build:app:docker": "yarn --cwd ./excalidraw-app build:app:docker",
+        "build:app-clean": "for /d %d in (packages\\excalidraw\\dist) do rmdir /s /q \"%d\"",
+    "build:app-clean-netli":                   "rimraf --glob \"packages/excalidraw/*/dist\"",
     "build:app": "yarn --cwd ./excalidraw-app build:app",
     "build:common": "yarn --cwd ./packages/common build:esm",
     "build:element": "yarn --cwd ./packages/element build:esm",
@@ -62,6 +64,7 @@
     "build:packages": "yarn build:common && yarn build:math && yarn build:element && yarn build:excalidraw",
     "build:version": "yarn --cwd ./excalidraw-app build:version",
     "build": "yarn --cwd ./excalidraw-app build",
+    "build:netli": "yarn build:app-clean && yarn --cwd ./excalidraw-app build",
     "build:preview": "yarn --cwd ./excalidraw-app build:preview",
     "start": "yarn --cwd ./excalidraw-app start",
     "start:production": "yarn --cwd ./excalidraw-app start:production",

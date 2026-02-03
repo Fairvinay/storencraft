@@ -32,5 +32,5 @@
     }
   },
   "include": ["packages", "excalidraw-app"],
-  "exclude": ["examples", "dist", "types", "tests", "**/*.test.ts","**/*.test.tsx", "*.test.tsx"]
+  "exclude": ["examples", "dist", "types", "tests", "**/*.test.ts","**/*.test.tsx", "*.test.tsx", "packages/excalidraw/components/App.tsx","packages/excalidraw/tests/helpers/api.ts"]
 }

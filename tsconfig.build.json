@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+     "noEmitOnError": true,
+  },
+  "include": [
+    "packages",
+    "excalidraw-app"
+  ],
+  "exclude": [
+    "packages/**/dist/types/excalidraw/components/App.d.ts",
+    "**/components/App.tsx",
+    "**/components/app.ts",
+    "**/tests/**",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}

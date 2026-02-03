@@ -64,7 +64,7 @@
     "build:packages": "yarn build:common && yarn build:math && yarn build:element && yarn build:excalidraw",
     "build:version": "yarn --cwd ./excalidraw-app build:version",
     "build": "yarn --cwd ./excalidraw-app build",
-    "build:netli": "yarn build:app-clean && yarn --cwd ./excalidraw-app build",
+    "build:netli": "yarn build:app-clean-netli && yarn --cwd ./excalidraw-app build",
     "build:preview": "yarn --cwd ./excalidraw-app build:preview",
     "start": "yarn --cwd ./excalidraw-app start",
     "start:production": "yarn --cwd ./excalidraw-app start:production",
